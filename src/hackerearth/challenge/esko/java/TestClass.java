@@ -54,7 +54,6 @@ public class TestClass {
         List<String> rawUnitsList = Arrays.asList(rawUnits.toLowerCase().split(","));
         
         List<String> sortedList = new ArrayList<String>();
-        String smallestUnit = null;
         Map<String,UnitRelation> lookUpMap = new HashMap<String,UnitRelation>();
         for ( int i = 0; i < rawUnitsList.size()-1; i ++) {
         	List<String> tempList = new ArrayList<String>();
@@ -85,7 +84,6 @@ public class TestClass {
         }
         Integer currentValue = null;
         Integer prevValue = 1;
-        String tempKey = null;
         answer.append("1 " + sortedList.get(0) + " = ");
         for(int k = 1; k < sortedList.size(); k++) {
         	currentValue = lookUpMap.get(sortedList.get(k-1)).getUnitValue();
