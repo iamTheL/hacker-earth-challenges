@@ -3,7 +3,6 @@
  */
 package he.circuits.august;
 
-import java.math.BigInteger;
 import java.util.Scanner;
 
 /**
